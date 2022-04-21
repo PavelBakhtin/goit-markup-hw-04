@@ -66,20 +66,24 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .contacts-nav .list {
   display: flex;
-  align-items: baseline;
+  align-items: center
   
   }
 .site-nav-text+.site-nav-text {
   margin-left: 50px;
 }
-.site-contacts-text+.site-contacts-text {
-   margin-left: 50px;
+.site-contacts-text +.site-contacts-text {
+   margin-left: 30px;
 } 
 
 .contacts-nav {
  display: flex;
  align-items: center;
  margin-left: auto;
+}
+.header-link {
+  display: flex;
+  align-items: center;
 }
 .header-link:hover.contacts-icon {
   fill: var(--accent-color);
@@ -301,9 +305,11 @@ h1,h2,h3,h4,h5,h6,p {
     align-items: center;
     fill: var(--icon-filler);
   }
-  .team-soc-item + .team-soc-item {
-    margin-left: 10px;
+  .team-soc-li:not(:last-child) {
+    margin-right: 10px;
   }
+
+  
   .team-soc-item:hover, .team-soc-item:focus {
     background-color: var(--accent-color);
   }
@@ -430,10 +436,7 @@ h1,h2,h3,h4,h5,h6,p {
   .join-soc-item:hover, .join-soc-item:focus {
     background-color: var(--accent-color);
   }
-  .icon-twitter {
-    background-color: var(--accent-color);
-  }
-
+  
  /* -----------Портфолио-------------- */
   
  .portfolio {
@@ -441,7 +444,7 @@ h1,h2,h3,h4,h5,h6,p {
    padding-bottom: 94px;
  }
     .button-item {
-      padding: 6px 22px;
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -457,9 +460,10 @@ h1,h2,h3,h4,h5,h6,p {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     }
-    .button-item:hover, .button-item:focus {
+    .button-item:hover, .button-item:focus  {
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+    
     .portfolio-title {
         font-weight: 700;
         font-size: 18px;
